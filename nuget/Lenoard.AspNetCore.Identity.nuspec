@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package>
+  <metadata minClientVersion="3.4">
+    <id>Lenoard.AspNetCore.Identity</id>
+    <version>0.1.0</version>
+    <authors>edwardmeng</authors>
+    <owners>edwardmeng</owners>
+    <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
+    <projectUrl>https://github.com/edwardmeng/Lenoard.AspNetCore.Identity</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>
+      The improvements for the Microsoft Asp.Net Core Identity component.
+    </description>
+    <summary>
+      The improvements for the Microsoft Asp.Net Core Identity component.
+    </summary>
+    <tags>Lenoard Identity</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="NETStandard.Library" version="[1.6.1, )" />
+        <dependency id="Microsoft.AspNetCore.Identity" version="[1.1.0, )" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="lib\**\*.dll" target="lib" />
+    <file src="lib\**\*.xml" target="lib" />
+    <file src="lib\**\*.deps.json" target="lib" />
+    <file src="..\LICENSE" />
+  </files>
+</package>
