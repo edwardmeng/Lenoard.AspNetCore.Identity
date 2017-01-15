@@ -7,7 +7,7 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Lenoard.AspNetCore", "Lenoa
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Lenoard.AspNetCore.Testing.WebApp", "Lenoard.AspNetCore.Testing.WebApp\Lenoard.AspNetCore.Testing.WebApp.xproj", "{D4CB1FE1-EB48-4FF3-A018-48CAA48DDC67}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Lenoard.AspNetCore.Testing.UnitTests", "Lenoard.AspNetCore.Testing.UnitTests\Lenoard.AspNetCore.Testing.UnitTests.xproj", "{9A488E45-51CD-4BA9-A347-7D769DCE8373}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Lenoard.AspNetCore.UnitTests", "Lenoard.AspNetCore.Testing.UnitTests\Lenoard.AspNetCore.UnitTests.xproj", "{9A488E45-51CD-4BA9-A347-7D769DCE8373}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
