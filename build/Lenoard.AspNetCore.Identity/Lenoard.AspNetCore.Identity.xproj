@@ -19,6 +19,9 @@
     <Compile Include="..\..\src\ClaimsExtensions.cs">
       <Link>ClaimsExtensions.cs</Link>
     </Compile>
+    <Compile Include="..\..\src\IdentityBuilderExtensions.cs">
+      <Link>IdentityBuilderExtensions.cs</Link>
+    </Compile>
     <Compile Include="..\..\src\FilteredUserClaimsPrincipalFactory.cs">
       <Link>FilteredUserClaimsPrincipalFactory.cs</Link>
     </Compile>
