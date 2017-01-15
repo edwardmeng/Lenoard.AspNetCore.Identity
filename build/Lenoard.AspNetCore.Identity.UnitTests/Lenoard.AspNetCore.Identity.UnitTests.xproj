@@ -7,7 +7,7 @@
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
     <ProjectGuid>9a488e45-51cd-4ba9-a347-7d769dce8373</ProjectGuid>
-    <RootNamespace>Lenoard.AspNetCore.UnitTests</RootNamespace>
+    <RootNamespace>Lenoard.AspNetCore.Identity.UnitTests</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -19,37 +19,37 @@
     <Compile Include="..\..\GlobalAssemblyInfo.cs">
       <Link>Properties\GlobalAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="..\..\test\InMemoryRoleStore.cs" >
+    <Compile Include="..\..\test\InMemoryRoleStore.cs">
       <Link>InMemoryRoleStore.cs</Link>
     </Compile>
-    <Compile Include="..\..\test\InMemoryUserStore.cs" >
+    <Compile Include="..\..\test\InMemoryUserStore.cs">
       <Link>InMemoryUserStore.cs</Link>
     </Compile>
-    <Compile Include="..\..\test\TestUserClaimsPrincipalFilter.cs" >
+    <Compile Include="..\..\test\TestUserClaimsPrincipalFilter.cs">
       <Link>TestUserClaimsPrincipalFilter.cs</Link>
     </Compile>
-    <Compile Include="..\..\test\UserClaimsPrincipalFilterTest.cs" >
+    <Compile Include="..\..\test\UserClaimsPrincipalFilterTest.cs">
       <Link>UserClaimsPrincipalFilterTest.cs</Link>
     </Compile>
-    <Compile Include="..\..\test\Model\TestRole.cs" >
+    <Compile Include="..\..\test\Model\TestRole.cs">
       <Link>Model\TestRole.cs</Link>
     </Compile>
-    <Compile Include="..\..\test\Model\TestRoleClaim.cs" >
+    <Compile Include="..\..\test\Model\TestRoleClaim.cs">
       <Link>Model\TestRoleClaim.cs</Link>
     </Compile>
-    <Compile Include="..\..\test\Model\TestUser.cs" >
+    <Compile Include="..\..\test\Model\TestUser.cs">
       <Link>Model\TestUser.cs</Link>
     </Compile>
-    <Compile Include="..\..\test\Model\TestUserClaim.cs" >
+    <Compile Include="..\..\test\Model\TestUserClaim.cs">
       <Link>Model\TestUserClaim.cs</Link>
     </Compile>
-    <Compile Include="..\..\test\Model\TestUserLogin.cs" >
+    <Compile Include="..\..\test\Model\TestUserLogin.cs">
       <Link>Model\TestUserLogin.cs</Link>
     </Compile>
-    <Compile Include="..\..\test\Model\TestUserRole.cs" >
+    <Compile Include="..\..\test\Model\TestUserRole.cs">
       <Link>Model\TestUserRole.cs</Link>
     </Compile>
-    <Compile Include="..\..\test\Model\TestUserToken.cs" >
+    <Compile Include="..\..\test\Model\TestUserToken.cs">
       <Link>Model\TestUserToken.cs</Link>
     </Compile>
   </ItemGroup>

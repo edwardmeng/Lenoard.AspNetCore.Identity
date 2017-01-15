@@ -4,11 +4,10 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
-
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
     <ProjectGuid>c5ad7a4b-3889-4b7b-b0fa-aeef94b88eac</ProjectGuid>
-    <RootNamespace>Lenoard.AspNetCore</RootNamespace>
+    <RootNamespace>Lenoard.AspNetCore.Identity</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -17,16 +16,16 @@
     <Compile Include="..\..\GlobalAssemblyInfo.cs">
       <Link>Properties\GlobalAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="..\..\src\ClaimsExtensions.cs" >
+    <Compile Include="..\..\src\ClaimsExtensions.cs">
       <Link>ClaimsExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\..\src\FilteredUserClaimsPrincipalFactory.cs" >
+    <Compile Include="..\..\src\FilteredUserClaimsPrincipalFactory.cs">
       <Link>FilteredUserClaimsPrincipalFactory.cs</Link>
     </Compile>
-    <Compile Include="..\..\src\IdentityServiceCollectionExtensions.cs" >
+    <Compile Include="..\..\src\IdentityServiceCollectionExtensions.cs">
       <Link>IdentityServiceCollectionExtensions.cs</Link>
     </Compile>
-    <Compile Include="..\..\src\IUserClaimsPrincipalFilter.cs" >
+    <Compile Include="..\..\src\IUserClaimsPrincipalFilter.cs">
       <Link>IUserClaimsPrincipalFilter.cs</Link>
     </Compile>
   </ItemGroup>

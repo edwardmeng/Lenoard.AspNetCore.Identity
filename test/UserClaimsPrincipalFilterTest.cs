@@ -3,7 +3,6 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Xunit;
 
 namespace Lenoard.AspNetCore.Identity.UnitTests
@@ -15,11 +14,11 @@ namespace Lenoard.AspNetCore.Identity.UnitTests
         public UserClaimsPrincipalFilterTest()
         {
             var services = new ServiceCollection();
-            services.AddIdentity<TestUser, TestRole>();
+            services.AddIdentity<TestUser, TestRole>()
+                .AddClaimsPrincipalFilter<TestUserClaimsPrincipalFilter>()
+                .AddUserStore<InMemoryUserStore<TestUser, TestRole>>()
+                .AddRoleStore<InMemoryRoleStore<TestRole>>();
             services.AddLogging();
-            services.TryAddScoped<IUserStore<TestUser>, InMemoryUserStore<TestUser,TestRole>>();
-            services.TryAddScoped<IRoleStore<TestRole>, InMemoryRoleStore<TestRole>>();
-            services.AddScoped<IUserClaimsPrincipalFilter<TestUser>, TestUserClaimsPrincipalFilter>();
             _services = services.BuildServiceProvider();
         }
 
